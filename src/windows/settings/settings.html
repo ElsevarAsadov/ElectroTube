@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Settings</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+    <!--    TAILWINDCSS-->
+    <link href="../../tailwindcss/compiled.css" rel="stylesheet" />
+    <!--    RENDERER SCRIPT-->
+    <script defer src="rendererSettings.js"></script>
+  </head>
+  <body class="bg-color1 text-color3 p-2 overflow-hidden">
+    <div class="flex flex-col gap-4">
+      <div>
+        <p class="mb-2">Save Location:</p>
+        <p id="current-location" class="text-[10px] mb-1 truncate"></p>
+        <button id="change-location-btn" class="text-xs bg-color2 p-2 hover:bg-color4">Change</button>
+      </div>
+      <div>
+        <p class="mb-2">Audio Quality:</p>
+          <select id="quality-selection" class="text-xs bg-color2 p-2 hover:bg-color4">
+            <option>Highest Quality</option>
+            <option>Lowest Quality</option>
+          </select>
+      </div>
+      <div>
+        <p class="mb-2">Window Style:</p>
+        <select id="window-style-selection" class="text-xs bg-color2 p-2 hover:bg-color4">
+          <option>Standard</option>
+          <option>Always On Top</option>
+        </select>
+      </div>
+    </div>
+  </body>
+</html>

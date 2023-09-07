@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ElectroTube</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+    <!--    FONTAWESOME ICONS-->
+    <link
+      href="../../../fontawesome-free-6.4.2-web/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!--    TAILWINDCSS-->
+    <link href="../../tailwindcss/compiled.css" rel="stylesheet" />
+    <!--    RENDERER SCRIPT-->
+    <script defer src="rendererMain.js"></script>
+  </head>
+  <body class="h-screen overflow-hidden text-color3 bg-color3 select-none">
+    <nav class="h-1/6 flex bg-color1 items-center justify-between gap-2 p-2">
+      <i
+        title="Settings"
+        id="settings-icon"
+        class="text-2xl cursor-pointer hover:animate-spin fa-solid fa-gear"
+      ></i>
+      <div class="flex items-center gap-8">
+        <input
+          title="Insert Video URL"
+          id="url-input"
+          class="min-w-[60vw] font-bold text-color1 bg-color3 rounded-lg p-3 placeholder-color1"
+          type="text"
+          placeholder="Enter Video Url..."
+        />
+        <i
+          title="Add To Group"
+          id="add-to-group-icon"
+          class="text-2xl text-color3 hover:cursor-pointer hover:animate-pulse fa-solid fa-plus"
+        ></i>
+        <i
+          title="Download Audio"
+          id="download-icon"
+          class="text-2xl text-color3 hover:cursor-pointer hover:animate-pulse fa-solid fa-download"
+        ></i>
+      </div>
+    </nav>
+    <main class="h-5/6 bg-color2">
+      <section
+        id="group-items-container"
+        class="h-full relative w-full overflow-y-auto flex flex-col gap-5 p-2"
+      >
+        <!--        GROUP ITEMS WILL BE ADD HERE-->
+        <div class="h-full flex flex-col items-center justify-center">
+          <i
+            class="text-8xl fa-brands fa-youtube fa-beat-fade"
+            style="color: #ff4000"
+          ></i>
+          <p class="text-color3 font-bold italic mt-5">
+            Add Group Item And Start Downloading :)
+          </p>
+        </div>
+      </section>
+      <i
+        id="download-group-btn"
+        title="Download Group"
+        class="absolute right-6 bottom-6 text-2xl hover:cursor-pointer fa-solid fa-circle-down fa-bounce"
+      ></i>
+    </main>
+  </body>
+</html>

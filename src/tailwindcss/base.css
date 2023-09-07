@@ -1,0 +1,63 @@
+@import "../font/font.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*:focus {
+  outline: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: theme(colors.color2);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: theme(colors.color4);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: theme(colors.color3);
+}
+
+
+
+@layer components {
+  .group-item-container {
+    @apply relative flex flex-col w-full  text-sm font-bold gap-3 bg-color4 border-2 border-color4 rounded-lg p-3 hover:opacity-80;
+  }
+
+  .group-item-delete-icon {
+    @apply absolute right-1 hover:cursor-pointer;
+  }
+
+  .group-item-text-container {
+    @apply w-full;
+  }
+
+  .group-item-text {
+    @apply truncate;
+  }
+
+  .group-item-text-inner {
+    @apply font-normal text-xs;
+  }
+
+  .group-item-music-icon {
+    @apply block self-center text-7xl cursor-default ;
+  }
+}
