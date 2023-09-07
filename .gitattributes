@@ -1,3 +1,2 @@
-*.css linguist-detectable=false
-*.scss linguist-detectable=false
-*.less linguist-detectable=false
+fontawesome-free-6.4.2-web/*.css linguist-detectable=false
+fontawesome-free-6.4.2-web/*.scss linguist-detectable=false
