@@ -14,7 +14,7 @@ Desktop App To Download Youtube Videos
 2. check "out" folder
 
 
-> :warning: **remove wix plugin from package.json** if you do not wanna wix executable for windows. otherwise if you do not have WIX in your system PATH then you error
+> :warning: **remove wix plugin from package.json** if you do not wanna wix executable for windows. otherwise if you do not have WIX in your system PATH then you get error
 
 ![img-1](https://github.com/ElsevarAsadov/ElectroTube/assets/125838640/f2c98260-08af-4b8a-a1b3-4e2406955104)
 
